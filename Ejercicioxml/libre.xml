@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libre.xsd">
+	<titulo>Libre</titulo>
+	<autor>Nino Bravo</autor>
+	<letra>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Tiene casi veinte años y ya está</verso>
+			<verso>Cansado de soñar</verso>
+			<verso>Pero tras la frontera está su hogar</verso>
+			<verso>Su mundo y su ciudad</verso>			
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Piensa que la alambrada solo es</verso>
+			<verso>Un trozo de metal</verso>
+			<verso>Algo que nunca puede detener</verso>
+			<verso>Sus ansias de volar</verso>			
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Libre, como el sol cuando amanece</verso>
+			<verso>Yo soy libre como el mar</verso>
+			<verso>Libre, como el ave que escapó de su prisión</verso>
+			<verso>Y puede, al fin, volar</verso>
+			<verso>Libre, como el viento que recoge</verso>
+			<verso>Mi lamento y mi pesar</verso>
+			<verso>Camino sin cesar</verso>
+			<verso>Detrás de la verdad</verso>
+			<verso>Y sabré lo que es al fin, la libertad</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Con su amor por bandera se marchó</verso>
+			<verso>Cantando una canción</verso>	
+			<verso>Marchaba tan feliz que no escuchó</verso>	
+			<verso>La voz que le llamó</verso>	
+			<verso>Y tendido en el suelo se quedó</verso>	
+			<verso>Sonriendo y sin hablar</verso>	
+			<verso>Sobre su pecho flores carmesí</verso>	
+			<verso>Brotaban sin cesar</verso>	
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Libre, como el sol cuando amanece</verso>
+			<verso>Yo soy libre como el mar</verso>
+			<verso>Libre, como el ave que escapó de su prisión</verso>
+			<verso>Y puede, al fin, volar</verso>
+			<verso>Libre, como el viento que recoge</verso>
+			<verso>Mi lamento y mi pesar</verso>
+			<verso>Camino sin cesar</verso>
+			<verso>Detrás de la verdad</verso>
+			<verso>Y sabré lo que es al fin, la libertad</verso>
+			</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Libre, como el sol cuando amanece</verso>
+			<verso>Yo soy libre como el mar</verso>
+			<verso>Libre, como el ave que escapó de su prisión</verso>
+			<verso>Y puede, al fin, volar</verso>
+			<verso>Libre, como el viento que recoge</verso>
+			<verso>Mi lamento y mi pesar</verso>
+			<verso>Camino sin cesar</verso>
+			<verso>Detrás de la verdad</verso>
+			<verso>Y sabré lo que es al fin, la libertad</verso>
+		</estrofa>
+	</letra>
+</cancion>
+
