@@ -1,0 +1,101 @@
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  background-color: #788be9;
+}
+
+a {
+  color: inherit;
+	text-decoration: none;
+}
+
+.contenedor {
+   display: grid;
+	 justify-content: center;
+	 align-items: center;
+	 height: 25vh;
+}
+
+.ventana-modal > div {
+  border-radius: 1rem;
+}
+
+.boton {
+  background-color: white;
+  padding: 1em 1.5em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.verso {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.ventana-modal {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.ventana-modal:target {
+  visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* El simbolo > me indica que estoy seleccionando todos los elementos hijos, de este caso,
+selecciona todos los elementos div descedientes de ventana-modal */
+.ventana-modal > div {
+   width: 400px;
+	 position: absolute;
+	 top: 88%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 padding: 2em;
+	 background: white;
+}
+
+.ventana-modal p {
+  font-size: 150%;
+	 margin: 0 0 15px;
+}
+
+.cerrar-modal {
+  color: #aaa;
+	 line-height: 50px;
+	 font-size: 80%;
+	 position: absolute;
+	 right: 0;
+	 text-align: center;
+	 top: 0;
+	 width: 70px;
+	 text-decoration: none;
+}
+
+.cerrar-modal:hover {
+  color: black;
+}
+
+
+
+
+
