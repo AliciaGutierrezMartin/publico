@@ -1,4 +1,7 @@
-
+/**/
+/**/
+/* Primero damos estilos a la página completa html y el body, simplemente para que tenga un formato homogéneo
+añado una fuente*/
 html {
   font-size: 18px;
   line-height: 1.4;
@@ -14,14 +17,16 @@ a {
   color: inherit;
 	text-decoration: none;
 }
-
+/* contenedor que engloba toda la parte de la ventana modal*/
 .contenedor {
    display: grid;
 	 justify-content: center;
 	 align-items: center;
 	 height: 25vh;
 }
-
+/* El simbolo > me indica que estoy seleccionando todos los elementos hijos, de este caso,
+selecciona todos los elementos div descedientes de ventana-modal */
+/* le damos bordes redondeados*/
 .ventana-modal > div {
   border-radius: 1rem;
 }
@@ -41,7 +46,10 @@ a {
 h2 {
   text-align: center;
 }
-
+/*Con position fixed anclamos en la página la ventana que se abre al pinchar,
+le damos algo de formato de color y tamaño, y con hidden que se oculte el elemento y
+añadimos una transinsión muy pequeña para el efecto.
+ Aplicamos con la pseudoclase target para que se apliquen esos estilos concretos*/
 .ventana-modal {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
@@ -57,13 +65,14 @@ h2 {
 }
 
 .ventana-modal:target {
-  visibility: visible;
+    visibility: visible;
     opacity: 1;
     pointer-events: auto;
 }
 
 /* El simbolo > me indica que estoy seleccionando todos los elementos hijos, de este caso,
-selecciona todos los elementos div descedientes de ventana-modal */
+selecciona todos los elementos div descedientes de ventana-modal.
+Aplicamos más formatos de color y tamaño */
 .ventana-modal > div {
    width: 400px;
 	 position: absolute;
@@ -76,11 +85,11 @@ selecciona todos los elementos div descedientes de ventana-modal */
 
 .ventana-modal p {
   font-size: 150%;
-	 margin: 0 0 15px;
+	margin: 0 0 15px;
 }
 
 .cerrar-modal {
-  color: #aaa;
+   color: #aaa;
 	 line-height: 50px;
 	 font-size: 80%;
 	 position: absolute;
@@ -91,6 +100,7 @@ selecciona todos los elementos div descedientes de ventana-modal */
 	 text-decoration: none;
 }
 
+/* con la pseudoclase :hover hacemos que al pasar el puntero cambie de una flecha a una manita, aparte un formato de color*/
 .cerrar-modal:hover {
   color: black;
 }
