@@ -72,7 +72,8 @@ añadimos una transinsión muy pequeña para el efecto.
 
 /* El simbolo > me indica que estoy seleccionando todos los elementos hijos, de este caso,
 selecciona todos los elementos div descedientes de ventana-modal.
-Aplicamos más formatos de color y tamaño. Transform translate con los porcentajes centra la ventana */
+Aplicamos más formatos de color y tamaño. Transform translate con los porcentajes centra la ventana, en este caso,
+50% a la izquierda y abajo*/
 .ventana-modal > div {
    width: 400px;
 	 position: absolute;
