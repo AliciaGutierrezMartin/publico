@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="canciones.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="canciones.xsd">
+	<titulo>Skeleton</titulo>
+	<autor>Epica</autor>
+	<letra>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Nos furiae nocturni terrores</verso>
+			<verso>We are the night</verso>
+			<verso>We haunt your mind</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>A thousand silent voices have been screaming in my mind this night again</verso>
+			<verso>I am trying to decipher the allusion so I'll finally ascend</verso>
+			<verso>Run around in circles no direction without any end to see</verso>
+			<verso>Imagine there's a world with all the answers, are they hiding within me?</verso>			
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Can we find the lightning that shines inside our mind?</verso>
+			<verso>Can we fight the dark side, we've all been trying to hide?</verso>
+			<verso>The many sleepless nights, the panic that rewinds</verso>
+			<verso>Waiting for the sunrise as paradise arrives</verso>
+			<verso>We own the night</verso>
+			<verso>You better hide</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>The whispers of a liar cursing me inside, my thoughts are all on fire</verso>
+			<verso>Have been staring in the mirror of perception leaving everything behind</verso>	
+			<verso>Holding on to sanity before the darkness cuts me like a knife</verso>	
+			<verso>I am suffocating in a world in which I have to die to feel alive</verso>
+		</estrofa>	
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Can we find the lightning that shines inside our mind?</verso>
+			<verso>Can we fight the dark side, we've all been trying to hide?</verso>
+			<verso>The many sleepless nights, the panic that rewinds</verso>
+			<verso>Waiting for the sunrise as paradise arrives</verso>
+		</estrofa>	
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Darkness bleeding in the night's light</verso>
+			<verso>Standing at my bedside</verso>
+			<verso>Bring upon the nightmares</verso>
+			<verso>Open up the secret window</verso>
+			<verso>Step into the unknown</verso>
+			<verso>Longing not to be scared</verso>	
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Lightning that shines inside in our minds</verso>
+			<verso>A dark sight we've all been trying to hide</verso>
+			<verso>We've all been dancing in the dark</verso>
+			<verso>We've all been drifting worlds apart</verso>
+			<verso>Nos furiae daemonia tua</verso>
+			<verso>We've all been dancing in the dark</verso>	
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Can we find the lightning that shines inside our mind?</verso>
+			<verso>Can we fight the dark side, we've all been trying to hide?</verso>
+			<verso>The many sleepless nights, the panic that rewinds</verso>
+			<verso>Waiting for the sunrise as paradise arrives</verso>
+			</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>With peace of mind</verso>
+			<verso>Unlocking all the secrets in me</verso>
+			<verso>We harmonize</verso>
+			<verso>I carry my own skeleton key</verso>
+		</estrofa>
+	</letra>
+</cancion>
+

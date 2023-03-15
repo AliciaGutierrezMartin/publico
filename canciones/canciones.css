@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* el css añadido se ha hecho para intentar adaptar la forma del xml a la página*/
+
+/* se ha añadido la misma font de google y se ha puesto el mismo color de fondo que uso en la página web*/
+body {
+   font-family: 'Montserrat', sans-serif;
+   background: #090911;
+}
+
+/* para resaltar el texto he usado color blanco*/
+h1,h2, li, p{
+    color: white;
+}
+
+
+/* añado color a span*/
+span {
+    color: #090911;
+    background-color: #ffd157;
+    font-weight: bold;
+}
+
+@counter-style upper-roman {
+  system: additive;
+  range: 1 3999;
+  additive-symbols: 1000 M, 900 CM, 500 D, 400 CD, 100 C, 90 XC, 50 L, 40 XL, 10 X, 9 IX, 5 V, 4 IV, 1 I;
+}
+
+ul {
+  list-style-type: upper-roman;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+ol li::before {
+    counter-increment: section;
+    content: counters(section, ".") " - ";
+  }

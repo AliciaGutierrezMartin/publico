@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="canciones.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="canciones.xsd">
+	<titulo> Abyss Of Time</titulo>
+	<autor>Epica</autor>
+	<letra>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Fill the void in me</verso>
+			<verso>See life beyond the veil</verso>
+			<verso>Replace all thoughts from the abyss with cosmic energy</verso>
+			<verso>Ignite the flame in thee</verso>
+			<verso>Fill out the tree of your life</verso>
+			<verso>We are rooted deep in the darkness</verso>
+			<verso>And keep growing towards the light</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Be without your fears</verso>
+			<verso>For a thousand years</verso>
+			<verso>Search for stillness deep inside</verso>
+			<verso>One thought that grows in the abyss of time</verso>
+			<verso>Fills up the vast space with matter and life</verso>
+			<verso>Free of the darkness that fetters the soul</verso>
+			<verso>Find at the source the end of your goal</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Find the spark in me</verso>
+			<verso>See life beyond the dream</verso>	
+			<verso>Replace your darkest emotions with pure divinity</verso>	
+			<verso>Ignite the flame in me</verso>	
+			<verso>Unite with your inner light</verso>	
+			<verso>We should free ourselves from the shadows</verso>	
+			<verso>And the bondage of the night</verso>		
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Be without your fears</verso>
+			<verso>For a thousand years</verso>
+			<verso>Search for stillness deep inside</verso>
+			<verso>One thought that grows in the abyss of time</verso>
+			<verso>Fills up the vast space with matter and life</verso>
+			<verso>Free of the darkness that fetters the soul</verso>
+			<verso>Find at the source the end of your goal</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Fight back your fears forever</verso>
+			<verso>Be the master of your life</verso>
+			<verso>Learn to unlearn</verso>
+			<verso>In the beginning there was a timeless, space-less, nothingness</verso>
+			<verso>And into that nothingness came a thought, purposeful, all-pervading</verso>
+			<verso>So ended the Void</verso>
+			<verso>Surge, the Demiurge</verso>
+			<verso>Shaper of a false universe</verso>
+			<verso>Search that deadly urge</verso>
+			<verso>Your walls of self-protection are</verso>
+			<verso>Walls of self-imprisonment</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Be without your fears</verso>
+			<verso>For a thousand years</verso>
+			<verso>Search for stillness deep inside</verso>
+			<verso>Strive for harmony in duality</verso>
+			<verso>To revise the book of life</verso>
+			<verso>There was one thought that grew in the abyss of time</verso>
+			<verso>It filled up the vast space with matter and life</verso>
+			<verso>Freed from the darkness that fettered the soul</verso>
+			<verso>We found at the end our reason, our goal</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>We march on</verso>
+			<verso>We're counting down</verso>
+			<verso>To singularity</verso>
+			<verso>While we drown</verso>
+			<verso>We're moving on</verso>
+			<verso>To master wisdom</verso>
+			<verso>To be free</verso>
+		</estrofa>
+	</letra>
+</cancion>
+
