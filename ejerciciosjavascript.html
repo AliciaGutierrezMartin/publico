@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+
+    <h1>1 - Imprimir el primer numero tantas veces como indique el segundo usar document.write()</h1>
+
+    <script>
+        let numero =parseInt(prompt("escribe un número"));
+        let repeticion =parseInt(prompt("escribe cuantas veces se va a repetir ese número"));
+         for(let i=0; i < repeticion; i++) {
+            document.write(numero + " ");
+         }
+    </script>
+
+    <h2>AVANZADO: cada linea no tendrá más de 8 caracteres</h2>
+
+    <script>
+        let linea= ""; // creo una vacía para ir guardando
+        for(let i=0; i < repeticion; i++) {
+            linea += numero; // para concatenar
+            if (linea.length == 8) { // si tiene 8 números entonces lo imprimimos por pantalla
+                document.write(linea + "<br/>");
+                linea = "";// aquí vacíamos la línea para encadenar desde 0
+            }
+        }
+        document.write(linea);  // aqui meto lo que me sobra
+    </script>
+    
+
+<h1>2 - Imprimir una pirámide a partir de la columna 20, de 3 filas por 5 columnas, usando la letra o. Puede ser imprimiendo caracter por caracter dentro del / los bucles, o simplemente creando el string dentro del/los bucles y luego se imprime dicho string al final.</h1>
+
+<script>
+        let n = 3;
+        for (let i = 0; i < n; i++) {
+            let str = ''; // creo una vacia para ir guardando
+            for (let j = 1; j < n-i; j++) { // n=3 y n-1, el 3 menos la línea en la que estoy
+            str = str + ' ';
+            }
+            for (let k = 1; k <= (2*i+1); k++) {
+            str = str + 'o';
+            }
+            document.write("<pre>" + str + "</pre>");
+      }
+</script>
+
+<h2>AVANZADO: centrarla en una pantalla que supuestamente tiene 80 columnas</h2>
+
+<script>
+    let num = 3;
+    for (let i = 0; i < n; i++) {
+        let str = ''; // creo una vacia para ir guardando
+        for (let j = 1; j < num-i; j++) { // n=3 y n-1, el 3 menos la línea en la que estoy
+        str = str + ' ';
+        }
+        for (let k = 1; k <= (2*i+1); k++) {
+        str = str + 'o';
+        }
+        document.write("<pre>" +' '.repeat(80) + str+"</pre>");
+  }
+</script>
+
+
+<h2>MASTER: ¿y si los vértices son asteriscos?</h2>
+<script>
+     let numer = 3;
+    for (let i = 0; i < numer; i++) {
+        let str = ''; 
+    
+        for (let j = 1; j < numer-i; j++) { 
+            str = str + ' ';
+        }
+        
+        for (let k = 1; k <= (2*i+1); k++) {
+            if (i === 0 || (i== numer - 1 && (k == 1 || k == (2*i+1))) ) {
+                str = str + '*'; 
+            }  else {
+                str = str + 'o';        
+            }
+        }
+        document.write("<pre>" +' '.repeat(80) + str+"</pre>");
+    }
+</script>
+
+
+</body>
+</html>
