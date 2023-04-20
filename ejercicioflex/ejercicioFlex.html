@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ejercicio Flex en JavaScript</title>
+</head>
+<body>
+
+    <h1>PIRÁMIDES</h1>
+
+    <div class="contenedor">
+
+        <div id="d1" class="contenedor2">
+            <div><h2>1</h2></div>
+            
+        </div>
+
+        <div id="d2" class="contenedor2">
+            <div><h2>2</h2></div>
+            
+        </div>
+        <div id="d3" class="contenedor2">
+            <div><h2>3</h2></div>
+            
+        </div>
+        <div id="d4" class="contenedor2">
+            <div><h2>4</h2></div>
+        </div>
+            
+        <div id="d5" class="contenedor2">
+                <div><h2>5</h2></div>
+                
+        </div>
+            
+        </div>
+        <script>
+            posiciones();
+            function posiciones() {
+                var posicion = prompt("Dime la posición que quieres que vaya el número, del 1 al 5");
+                var color = prompt("Elige un color para usarlo, puede ser naranja o verde");
+                piramide(posicion, color);
+            }
+            function piramide(lugar, color) {
+                var elemento = document.getElementById("d" + lugar);
+                var altura = 4;
+                var caracter = "";
+                elemento.innerHTML = "";
+                switch(color) {
+                    case "naranja":
+                        elemento.style.backgroundColor = "orange";
+                        break;
+                    case "verde":
+                        elemento.style.backgroundColor = "green";
+                        break;
+                    default:
+                        alert("Tienes que poner un color");
+                }
+                for (var i = 0; i < altura; i++) {
+                    caracter += "o";
+                    elemento.innerHTML += caracter + "<br>";
+                }
+            }
+        </script>
+
+    
+</body>
+</html>

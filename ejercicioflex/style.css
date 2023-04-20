@@ -1,0 +1,61 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+.contenedor2:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contenedor2:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.icontenedor2:nth-child(3) {
+    position: relative;
+}
+.contenedor2:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contenedor2:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
