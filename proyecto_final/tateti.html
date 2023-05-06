@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Ejercicio: TA-TE-TI (Tres en Raya)</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="texto">
+          <h1>Tres en Raya</h1>
+          <a class="boton-retro" href="./index.html">Volver</a>
+          <button class="boton-retro margin-10" onclick="resetear()">Reiniciar partida</button>
+          <p id="partida"></p>  
+          <div class="fila" id="fila1">
+            <div class="cuadrito" id="c0" onmouseenter="pasaRaton('c0')" onmouseleave="quitaRaton('c0')" onclick="hacerClick(0)" ></div>
+            <div class="cuadrito" id="c1" onmouseenter="pasaRaton('c1')" onmouseleave="quitaRaton('c1')" onclick="hacerClick(1)"></div>
+            <div class="cuadrito" id="c2" onmouseenter="pasaRaton('c2')" onmouseleave="quitaRaton('c2')" onclick="hacerClick(2)"></div>
+        </div>
+
+        <div class="fila" id="fila2">
+            <div class="cuadrito" id="c3"  onmouseenter="pasaRaton('c3')" onmouseleave="quitaRaton('c3')" onclick="hacerClick(3)" ></div>
+            <div class="cuadrito" id="c4"  onmouseenter="pasaRaton('c4')" onmouseleave="quitaRaton('c4')" onclick="hacerClick(4)"></div>
+            <div class="cuadrito" id="c5"  onmouseenter="pasaRaton('c5')" onmouseleave="quitaRaton('c5')" onclick="hacerClick(5)"></div>
+        </div>
+
+        <div class="fila" id="fila3">
+            <div class="cuadrito" id="c6"  onmouseenter="pasaRaton('c6')" onmouseleave="quitaRaton('c6')" onclick="hacerClick(6)"></div>
+            <div class="cuadrito" id="c7" onmouseenter="pasaRaton('c7')" onmouseleave="quitaRaton('c7')" onclick="hacerClick(7)"></div>
+            <div class="cuadrito" id="c8" onmouseenter="pasaRaton('c8')" onmouseleave="quitaRaton('c8')" onclick="hacerClick(8)"></div>
+        </div>
+
+        </div>
+      </div>
+
+  
+<script src="./script.js"></script>
+
+    
+</body>
+</html>
