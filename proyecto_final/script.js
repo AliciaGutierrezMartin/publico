@@ -55,12 +55,12 @@ function comprobar() {
     for (var i = 0; i<ganar.length;i++) {
         if(cuadro_btn[ganar[i][0]].innerHTML==simbolo1 && cuadro_btn[ganar[i][1]].innerHTML==simbolo1 && cuadro_btn[ganar[i][2]].innerHTML==simbolo1) {
             // llamo a la librería para mostrarla
-            alert('jugador 1 gana');
+            alert('jugador '+simbolo1+' gana');
             resetear();
             return; // con return hacemos que al haber ganado no compruebe nada más y salga de la función
         } else if (cuadro_btn[ganar[i][0]].innerHTML==simbolo2 && cuadro_btn[ganar[i][1]].innerHTML==simbolo2 && cuadro_btn[ganar[i][2]].innerHTML==simbolo2) {
             // llamo a la librería para mostrarla
-            alert('jugador 2 gana');
+            alert('jugador '+simbolo2+' gana');
             resetear();
             return;
         }
