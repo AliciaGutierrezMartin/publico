@@ -4,6 +4,7 @@ function guardarAjustes() {
     const ajustesModo = document.querySelector('input[name="modo"]:checked').value;
     window.localStorage.setItem("--usuario", ajustesNombre);
     window.localStorage.setItem("--modo", ajustesModo);
+    console.log("Ajustes actualizados");
     activarAjustes();
 }
 
@@ -28,7 +29,7 @@ function activarAjustes() {
     if (radioModo) {
         radioModo.checked = true;
     }
-
+    console.log("aplicado modo "+modo);
     let body=document.getElementsByTagName("body")[0];
     body.className = "";
     body.classList.add(modo);
