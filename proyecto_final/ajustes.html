@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Ajustes</title>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="menu-izq">
+      <a href="./index.html">Inicio</a>
+      <a href="./tateti.html">Juega!</a>
+      <a href="./listado.html">Listado</a> 
+      <a class="activo" href="./ajustes.html">Ajustes</a>  
+      <a href="#abrir-modal">Información</a> 
+    </div>
+    <div class="menu-dcha" id="usuario">Sin identificar</div>
+  </nav>
+      <div id="abrir-modal" class="ventana-modal">
+        <div>
+        <a href="" title="Cerrar" class="cerrar-modal">Cerrar</a>
+        <p>Alicia Gutiérrez Martín</p>
+        <p>1º DAM</p>
+        <p>Videojuegos retro</p>
+        <p></p>
+        </div>
+        </div>
+    
+    <div class="contenedor">
+      <!-- aplicamos la variables al formulario, etiqueta form,
+       con Event.preventDefault() evitamos que se ejecute la acción predeterminada en el envío de el formulario
+      ...... -->
+        <h1 class="centrado">Ajustes</h1>
+        <form id="ajustes-form" onsubmit="event.preventDefault(); guardarAjustes();">
+          <div class="bloque-form centrado">
+            <label>Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre aquí" id="ajustesNombre"/>
+          </div>
+          <div class="bloque-form centrado">
+            <label>Modo</label>
+            <span>            
+              <input type="radio" name="modo" value="dia" id="modo_dia"/> Dia
+            </span>
+            <span>            
+              <input type="radio" name="modo" value="noche" id="modo_noche"/> Noche
+            </span>
+          </div>
+          <div class="bloque-form centrado">
+            <button class="boton-retro">Guardar</button>
+          </div>
+
+        </form>
+    </div>
+  
+    <script src="./script.js"></script>    
+</body>
+</html>

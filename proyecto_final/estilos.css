@@ -1,22 +1,60 @@
+ /**/
+/*establezco las variables para dar formato a la letra y al fondo, también añado una imagen diferente para el modo día*/
+:root {
+  --colorFuenteDia: black;
+  --colorFuenteNoche:white;
+  --fondoNoche: linear-gradient(rgb(54 118 68 / 35%), rgb(13 110 34 / 50%)), url(fondo.jpg);
+  --fondoDia: linear-gradient(rgb(54 118 68 / 35%), rgb(13 110 34 / 50%)), url(dia.png);
+}
+
 body, html {
     font-family: 'Press Start 2P', cursive;
     /*le pongo altura vh para que ocupe toda la página*/
     height: 100vh;
-    /**/
     /* añado este margin para eliminar el borde blanco exterior*/
     margin: 0;
 }
+ /*añado flex para colocar correctamente los elementos*/
+ /*pongo fondo de un color oscuro para que se aprecie la barra de navegación y formato para que quede coherente*/
+.topnav {
+  background-color: #333;
+  padding: 14px 16px 14px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-/* The hero image */
-.contenedor {
+.topnav a {
+  color: var(--colorFuenteNoche);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ /*con hover hago que cambie la forma de flecha de ratón al pasarlo por encima del elemento*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ /*aqui hago que cambie de color a verde el fondo al pinchar sobre una de las opciones de la barra de navegación y aplico un cambio de color en las letras*/
+.topnav a.activo {
+  background-color: #04AA6D;
+  color: var(--colorFuenteNoche);
+}
+
+.menu-dcha {
+  color: var(--colorFuenteNoche);
+}
+
+  body {
     /* Le añado "linear-gradient" para darle un toque retro */
-    background-image: linear-gradient(rgb(54 118 68 / 35%), rgb(13 110 34 / 50%)), url(fondo.jpg);
+    background-image: var(--fondoNoche);
     height: 100%;  
     /* centramos todo el contenido */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    color: var(--colorFuenteNoche);
   }
   
   /* mete el texto en el centro */
@@ -26,7 +64,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--colorFuenteNoche);
   }
 
   .boton-retro {
@@ -43,7 +81,7 @@ body, html {
   }
 
   /*metemos un contenido vacio en el before y en el after*/
-  .boton-retro:before, .boton-retro:after {
+  .boton-retro:before, .boton-retro:after{
     content: "";
     position: absolute;
     width: 100%;
@@ -97,3 +135,146 @@ body, html {
 .margin-10 {
     margin-bottom: 10px;
 }
+
+.contenedor {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 0;
+}
+
+ /*aplicamos un media query para hacerlo responsive a varios tamaños de pantalla*/
+@media (min-width: 768px) {
+  .contenedor {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor {
+    width: 1170px;
+  }
+}
+
+.centrado {
+  text-align: center;
+}
+
+#ajustes-form {
+  width: 50%;
+  margin: auto;
+}
+
+#ajustes-form label {
+  display: block;
+  padding: 20px 0;
+}
+
+#ajustes-form input[type=text] {
+  display: block;
+  padding: 10px 15px;
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+}
+
+.bloque-form:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+/** Modo dia **/
+
+.dia {
+  color: var(--colorFuenteDia);
+  background-image: var(--fondoDia);
+}
+
+.dia .menu-dcha {
+  color: var(--colorFuenteDia);
+}
+
+.dia .topnav {
+  background: #e3e3e3;
+}
+
+.dia .topnav a{
+  color: var(--colorFuenteDia);
+}
+
+.dia .topnav a.activo{
+  color: black;
+}
+
+.dia .texto {
+  color: var(--colorFuenteDia);
+}
+
+
+
+.ventana-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  height: 60%;
+  width: 100%;
+}
+
+.ventana-modal:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* El simbolo > me indica que estoy seleccionando todos los elementos hijos, de este caso,
+selecciona todos los elementos div descedientes de ventana-modal.
+Aplicamos más formatos de color y tamaño. Transform translate con los porcentajes centra la ventana, en este caso,
+50% a la izquierda y abajo*/
+.ventana-modal > div {
+   width: 400px;
+   height: 200px;
+	 position: absolute;
+	 top: 88%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 padding: 2em;
+	 background: white;
+}
+
+.ventana-modal p {
+  font-size: 80%;
+	margin: 0 0 15px;
+  color: black;
+}
+
+.cerrar-modal {
+   color: #aaa;
+	 line-height: 50px;
+	 font-size: 73%;
+	 position: absolute;
+	 right: 0;
+	 text-align: center;
+	 top: 0;
+	 width: 100px;
+	 text-decoration: none;
+}
+
+/* con la pseudoclase :hover hacemos que al pasar el puntero cambie de una flecha a una manita, aparte un formato de color*/
+.cerrar-modal:hover, p {
+  color: black;
+}
+
+

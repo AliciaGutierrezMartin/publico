@@ -10,12 +10,30 @@
     <link rel="stylesheet" href="./estilos.css">
     <title>Ejercicio: TA-TE-TI (Tres en Raya)</title>
 </head>
-<body>
-
+<body id="tateti">
+    <nav class="topnav">
+        <div class="menu-izq">
+          <a href="./index.html">Inicio</a>
+          <a class="activo" href="./tateti.html">Juega!</a>
+          <a href="./listado.html">Listado</a> 
+          <a href="./ajustes.html">Ajustes</a>  
+          <a href="#abrir-modal">Información</a> 
+         
+        </div>
+        <div class="menu-dcha" id="usuario">Sin identificar</div>
+    </nav>
+    <div id="abrir-modal" class="ventana-modal">
+        <div>
+        <a href="" title="Cerrar" class="cerrar-modal">Cerrar</a>
+        <p>Alicia Gutiérrez Martín</p>
+        <p>1º DAM</p>
+        <p>Videojuegos retro</p>
+        </div>
+        </div>
+    
     <div class="contenedor">
         <div class="texto">
           <h1>Tres en Raya</h1>
-          <a class="boton-retro" href="./index.html">Volver</a>
           <button class="boton-retro margin-10" onclick="resetear()">Reiniciar partida</button>
           <p id="partida"></p>  
           <div class="fila" id="fila1">
@@ -40,7 +58,8 @@
       </div>
 
   
-<script src="./script.js"></script>
+      <script src="./script.js"></script>
+      <script src="./tateti.js"></script>
 
     
 </body>
