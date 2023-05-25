@@ -45,6 +45,8 @@
     			<br/>
     			</xsl:for-each>
     			</div>
+    			    <script src="./script.js"></script>    
+
 		</body>
 		</html>
 	</xsl:template>
