@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="listado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="consola"/>
+            </xs:sequence>
+            <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="consola">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="fabricante"/>
+                <xs:element ref="lanzamiento"/>
+                <xs:element ref="juegos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fabricante" type="xs:NCName"/>
+    <xs:element name="lanzamiento" type="xs:integer"/>
+    <xs:element name="juegos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="juego"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="juego">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="genero"/>
+                <xs:element ref="portada"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="genero" type="xs:NCName"/>
+    <xs:element name="portada" type="xs:anyURI"/>
+    <xs:element name="nombre" type="xs:string"/>
+</xs:schema>

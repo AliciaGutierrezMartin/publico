@@ -1,11 +1,4 @@
- /**/
-/*establezco las variables para dar formato a la letra y al fondo, también añado una imagen diferente para el modo día*/
-:root {
-  --colorFuenteDia: black;
-  --colorFuenteNoche:white;
-  --fondoNoche: linear-gradient(rgb(54 118 68 / 35%), rgb(13 110 34 / 50%)), url(fondo.jpg);
-  --fondoDia: linear-gradient(rgb(54 118 68 / 35%), rgb(13 110 34 / 50%)), url(dia.png);
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body, html {
     font-family: 'Press Start 2P', cursive;
@@ -24,7 +17,7 @@ body, html {
 }
 
 .topnav a {
-  color: var(--colorFuenteNoche);
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -38,23 +31,22 @@ body, html {
  /*aqui hago que cambie de color a verde el fondo al pinchar sobre una de las opciones de la barra de navegación y aplico un cambio de color en las letras*/
 .topnav a.activo {
   background-color: #04AA6D;
-  color: var(--colorFuenteNoche);
+  color: white;
 }
 
 .menu-dcha {
-  color: var(--colorFuenteNoche);
+  color: white;
 }
 
   body {
-    /* Le añado "linear-gradient" para darle un toque retro */
-    background-image: var(--fondoNoche);
+    background-image: url(fondo.jpg);
     height: 100%;  
     /* centramos todo el contenido */
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     position: relative;
-    color: var(--colorFuenteNoche);
+    color: white;
   }
   
   /* mete el texto en el centro */
@@ -64,7 +56,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--colorFuenteNoche);
+    color: white;
   }
 
   .boton-retro {
@@ -189,12 +181,12 @@ body, html {
 /** Modo dia **/
 
 .dia {
-  color: var(--colorFuenteDia);
-  background-image: var(--fondoDia);
+  color: black;
+  background-image: url(dia.png);
 }
 
 .dia .menu-dcha {
-  color: var(--colorFuenteDia);
+  color: black;
 }
 
 .dia .topnav {
@@ -202,7 +194,7 @@ body, html {
 }
 
 .dia .topnav a{
-  color: var(--colorFuenteDia);
+  color: black;
 }
 
 .dia .topnav a.activo{
@@ -210,7 +202,7 @@ body, html {
 }
 
 .dia .texto {
-  color: var(--colorFuenteDia);
+  color: black;
 }
 
 

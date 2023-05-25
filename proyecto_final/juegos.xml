@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="juegos.xsl"?>
+<listado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="juegos.xsd">
+	<consola>
+		<nombre>Megadrive</nombre>
+		<fabricante>Sega</fabricante>
+		<lanzamiento>1988</lanzamiento>
+		<juegos>
+			<juego>
+				<nombre>Golden Axe</nombre>
+				<genero>Arcade</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/01/golden-axe.jpg?tf=640x</portada>
+			</juego>
+			<juego>
+				<nombre>Altered Beast</nombre>
+				<genero>Arcade</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/09/246475-20-mejores-juegos-mega-drive.jpg?tf=640x</portada>
+			</juego>
+			<juego>
+				<nombre>Castlevania: The New Generation</nombre>
+				<genero>Metroidvania</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/01/castlevania-new-generation.jpg?tf=640x</portada>
+			</juego>
+		</juegos>
+	</consola>
+		<consola>
+		<nombre>Nintendo Entertainment System</nombre>
+		<fabricante>Nintendo</fabricante>
+		<lanzamiento>1983</lanzamiento>
+		<juegos>
+			<juego>
+				<nombre>Super Mario Bros 3</nombre>
+				<genero>Plataforma</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/01/205878-20-mejores-juegos-nes.gif?tf=640x</portada>
+			</juego>
+			<juego>
+				<nombre>The Legend of Zelda</nombre>
+				<genero>Aventura</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/01/205891-20-mejores-juegos-nes.jpg?tf=640x</portada>
+			</juego>
+			<juego>
+				<nombre>Metroid</nombre>
+				<genero>Metroidvania</genero>
+				<portada>https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2013/01/205894-20-mejores-juegos-nes.jpg?tf=640x</portada>
+			</juego>
+		</juegos>
+	</consola>
+</listado>
+
